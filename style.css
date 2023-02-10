@@ -121,10 +121,10 @@
 .playerContainer {
     display: flex;
     flex-wrap: wrap;
-    width: 60%;
+    width: 80%;
     margin: auto;
-    justify-content: space-between;
-    gap: 10px;    
+    justify-content: space-evenly;
+     
 }
 .modal-body {
     display: flex;
