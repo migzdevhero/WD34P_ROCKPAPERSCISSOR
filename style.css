@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}    
+.choiceBtn{
+    line-height: 30px;
+    width: 150px;
+}
+#gameDiv{
+    padding: 20%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 3px solid burlywood;
+    padding: 25px;
+    background-color: darkolivegreen;
+    text-align: center;
+
+}
+
+#computerText,
+#playerText,
+.gameCounterText {
+   font-family: 'Titan One', cursive;
+    color: crimson;
+    font-size: 3.5rem;
+   text-transform: lowercase;
+}
+.playerDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.image {
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    border-radius: 50%; 
+    background-color: rgb(179, 255, 213);
+    box-shadow: 0 0 10px rgba(14, 46, 19, 0.692);
+}
+.image:nth-child(2) {
+    margin: 0 100px;
+}
+#imageDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.choiceBtn {
+    width: 70%;
+    cursor: pointer;
+    transition: .5s;
+}
+.choiceBtn:hover {
+    transform: scale(2);
+}
+.playerDivChoice {
+    width: 500px;
+    height: 200px;
+    background-color: white;
+    border-radius: 20px;
+    border: solid lightgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;    
+}
+.playerDivChoice:nth-child(2) {
+    width: 200px;
+    height: 200px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 50%;
+    border: solid lightgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;    
+}
+
+
+.gameTextResult {
+    width: 60%;
+    height: 150px;
+    margin: 100px auto;
+    background-color: white;
+    border-radius: 20px;
+    border: solid lightgreen;
+}
+#resultText {
+    font-family: 'Titan One', cursive;
+    padding-top: 40px;
+    font-size: 3rem;
+    color: crimson;
+   
+}
+#versus {
+    margin-top: 30px;
+}
+#resetBtn {
+    margin-top: 50px;
+    width: 200px;
+    height: 50px;
+    font-size: 1.25rem;
+    border: none;
+    border: solid lightgreen;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(14, 46, 19, 0.692);
+    color: crimson;
+    font-weight: 800;
+    cursor: pointer;
+    transition: .5s;
+}
+#resetBtn:hover {
+    transform: scale(1.25);
+}
+#select {
+    margin-bottom: 50px;
+    color: white;
+}
+.playerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: auto;
+    justify-content: space-between;
+    gap: 10px;    
+}
+.modal-body {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.modal-body p {
+    text-align: left;
+}
+.modal-body p span {
+color: crimson;
+}
+.gameHistory-btn {
+    margin-top: 20px;
+    padding-top: 20px;
+}

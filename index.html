@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+    
+    
+</head>
+<body>
+    <div id="gameDiv">
+        <div class="playerDiv">
+          <div class="playerContainer">
+            <div class="playerDivChoice">
+              <h1>PLAYER</h1>
+              <h1 id="playerText"></h1>
+              <h1 id ="playerScore">Score: </h1>
+            </div>
+            <div class="playerDivChoice">
+              <h3>Game Counter</h3>
+              <h1 class="gameCounterText"></h1>
+            </div>
+            <div class="playerDivChoice">
+              <h1>COMPUTER</h1>
+              <h1 id="computerText"></h1>
+              <h1 id ="computerScore">Score: </h1>
+            </div>
+            </div>            
+            <div class="gameTextResult">
+            <h1 id="resultText">Welcome to Rock, Paper, Scissors Game!</h1>
+            </div>
+          </div>
+        <div id="select">
+          <h1>Select Rock, Paper or Scissors</h1>
+        </div>
+        <div id="imageDiv">
+          <div class="image"><img src="img/rps_1.png" alt="ROCK" class="choiceBtn"></div>
+          <div class="image"><img src="img/rps_2.png" alt="PAPER" class="choiceBtn"></div>
+          <div class="image"><img src="img/rps_3.png" alt="SCISSORS" class="choiceBtn"></div>
+        </div>
+        <button id="resetBtn">RESET GAME</button>
+        <div id="gameHistory">
+          <!-- modal -->
+              <!-- Button trigger modal -->
+            <button type="button" class="btn btn-success gameHistory-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              View Game History
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Game History</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">                    
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+                        <!-- modal end -->
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
