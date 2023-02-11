@@ -32,11 +32,12 @@ let gameHistory = [];
   gameCounterText.textContent = `${gameCounter}`;
 
 // game history
-   gameHistory.push({gameCounter, player, computer,  resultText});
+result = resultText.textContent;
+   gameHistory.push({gameCounter, player, computer, result});
   modalBody.innerHTML = "";
   gameHistory.forEach(history => {
     const historyHTML = `
-    <p>Game Counter: ${history.gameCounter} | Player: <span>${history.player}</span> vs Computer: <span>${history.computer}</span> | Result: <span>${history.resultText.textContent}</span></p>
+    <p>Game Counter: ${history.gameCounter} | Player: <span>${history.player}</span> vs Computer: <span>${history.computer}</span> | Result: <span>${history.result}</span></p>
     `;    
     modalBody.innerHTML += historyHTML;
   });
